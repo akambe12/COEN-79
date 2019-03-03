@@ -1,0 +1,32 @@
+//
+//  random.hpp
+//  Statistician_Random
+//
+//  Created by Ethan Paek on 9/28/18.
+//  Copyright © 2018 Ethan Paek. All rights reserved.
+//
+
+#ifndef random_hpp
+#define random_hpp
+
+#include <stdio.h>
+
+namespace coen79_lab2{
+    class rand_gen{
+    public:
+        rand_gen(int tmp_seed, int tmp_multiplier, int tmp_increment, int tmp_modulus);//formula used to generate the next seed
+        int next();//generates the next number
+        void set_seed(int tmp_seed);//set the new seed
+        int get_seed() const;//need getters in order to access info to private variables for print function
+        int get_multiplier() const;
+        int get_increment() const;
+        int get_modulus() const;
+        void print_info() const;
+    private:
+        int seed;
+        int multiplier;
+        int increment;
+        int modulus;
+    };
+}
+#endif /* random_hpp */
