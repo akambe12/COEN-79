@@ -1,7 +1,7 @@
 # COEN-79
 Object Oriented Programming and Advanced Data Structures in C++
 
-Labs taken during Fall 2018
+Labs taken during Fall 2018 
 
 Lab 1 (CountPatternConvert): Count  the  number  of  alphanumeric  characters  and  non-alphanumeric  characters  from  the standard input, display a specific numeric pattern, and convert to uppercase and display all the words from an input file with length of at least 10 
 characters in addition to removing all punctuation.
